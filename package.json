@@ -1,0 +1,23 @@
+{
+  "name": "incremental_ar",
+  "version": "0.1.0",
+  "description": "AR experience for the incremental robot construction installation",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arupiot/incremental_ar.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arupiot/incremental_ar/issues"
+  },
+  "homepage": "https://github.com/arupiot/incremental_ar#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

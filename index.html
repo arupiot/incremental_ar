@@ -5,8 +5,8 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='sourceType: webcam;'>
       <a-assets>
-      <a-asset-item id="incremental-obj" src="aassets/incremental.obj"></a-asset-item>
-      <a-asset-item id="incremental-mtl" src="aassets/incremental.mtl"></a-asset-item>
+      <a-asset-item id="incremental-obj" src="assets/incremental.obj"></a-asset-item>
+      <a-asset-item id="incremental-mtl" src="assets/incremental.mtl"></a-asset-item>
       </a-assets>
 
       <a-marker preset="hiro">
@@ -14,6 +14,11 @@
 
           <a-entity obj-model="obj: #incremental-obj; mtl: #incremental-mtl"></a-entity>
 
+      </a-marker>
+
+      <!-- handle kanji marker -->
+      <a-marker preset='kanji'>
+        <a-entity obj-model="obj: #incremental-obj; mtl: #incremental-mtl"></a-entity>
       </a-marker>
 
       <!-- <a-marker-camera preset='custom' url='pattern-marker.patt'> </a-marker>-->
