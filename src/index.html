@@ -5,10 +5,12 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs='sourceType: webcam;'>
       <a-assets>
-      <a-asset-item id="incremental-obj" src="assets/incremental.obj"></a-asset-item>
-      <a-asset-item id="incremental-mtl" src="assets/incremental.mtl"></a-asset-item>
+        <a-asset-item id="incremental-obj" src="assets/incremental.obj"></a-asset-item>
+        <a-asset-item id="incremental-mtl" src="assets/incremental.mtl"></a-asset-item>
+        <a-asset-item id="incremental-gltf" src="assets/gltf/incremental_test.gltf"></a-asset-item>
       </a-assets>
 
+      <!-- handle hiro marker (obj) -->
       <a-marker preset="hiro">
           <!-- <a-box position='0 0.5 0' material='color: yellow;'></a-box> -->
 
@@ -16,17 +18,12 @@
 
       </a-marker>
 
-      <!-- handle kanji marker -->
+      <!-- handle kanji marker (gltf) -->
       <a-marker preset='kanji'>
-        <a-entity obj-model="obj: #incremental-obj; mtl: #incremental-mtl"></a-entity>
+        <a-gltf-model src="#incremental-gltf"></a-gltf-model>
       </a-marker>
 
-      <!-- <a-marker-camera preset='custom' url='pattern-marker.patt'> </a-marker>-->
-      <!-- <a-box position='0 0.5 0' material='color: red;'></a-box> -->
-
       <a-entity camera></a-entity>
-    <!-- add a simple camera -->
-    <!--<a-entity camera></a-entity> -->
     </a-scene>
   </body>
-</html>
+</html>q

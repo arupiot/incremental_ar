@@ -6,7 +6,8 @@
   "scripts": {
     "start": "http-server ./src -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "scp -r src/* jason.brewer101@arupiot.com:/home/jason.brewer101/ar/src"
+    "deploy-all": "scp -r src/* jason.brewer101@arupiot.com:/home/jason.brewer101/ar/src",
+    "update-model": "scp -r src/* jason.brewer101@arupiot.com:/home/jason.brewer101/ar/src/assets"
   },
   "repository": {
     "type": "git",
