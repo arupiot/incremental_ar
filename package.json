@@ -4,8 +4,9 @@
   "description": "AR experience for the incremental robot construction installation",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 8080",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server ./src -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "scp -r src/* jason.brewer101@arupiot.com:/home/jason.brewer101/ar/src"
   },
   "repository": {
     "type": "git",
